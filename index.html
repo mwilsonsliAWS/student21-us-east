@@ -95,7 +95,19 @@
     </footer>
 
     <!-- Put Chat Widget 1 Line Below -->
-    
+    <script type="text/javascript">
+  (function(w, d, x, id){
+    s=d.createElement('script');
+    s.src='https://acac-student21-us-east.my.connect.aws/connectwidget/static/amazon-connect-chat-interface-client.js';
+    s.async=1;
+    s.id=id;
+    d.getElementsByTagName('head')[0].appendChild(s);
+    w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
+  })(window, document, 'amazon_connect', 'b1534346-5f82-46f6-a939-ddfc73651a9c');
+  amazon_connect('styles', { iconType: 'CHAT', openChat: { color: '#ffffff', backgroundColor: '#e9a616' }, closeChat: { color: '#ffffff', backgroundColor: '#123456'} });
+  amazon_connect('snippetId', 'QVFJREFIaThPZ042Z2Vwd1EzbWNOOW9zZVBpdlltbFlYREFwbEVldGoySmJEcktXREFHNDF6aUR1dkVvb3VZd084NDBIenBDQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNOHRBY1FHUENHeG5HREk3c0FnRVFnQ3VZOWEydTdoR1JFMFkvRHhJcytCZmoweElKOWg5Mld5aDFrT2l1UjZwK0QzcWwzTFIvTEo3VlduQkc6OnEwWUhwbUJkY3hzUWc0a0R2TS83NmNZM1F0cm9pK1plODJGMUdVay83ME1yRWp1MjBtTzgybVR6QzVBanNFdWRUMGJNV0dYamZlYldaK2lNOEhPb0YrVVBSWVIyR1J2L0g1VkxjUWJ5cXZBd1JacTRiTnNtUERlZnJDQ1FyTjIxZWVvU1VGYzhCYUZoWWo1bjhtMTltSnlXclpIbHFubz0=');
+  amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown', 'application/vnd.amazonaws.connect.message.interactive', 'application/vnd.amazonaws.connect.message.interactive.response' ]);
+</script>
     <!-- Chat Widget Above -->
   </body>
 </html>
